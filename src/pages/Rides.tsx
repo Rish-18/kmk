@@ -156,7 +156,8 @@ export default function Rides() {
       </section>
 
       <section className="mx-auto p-4 bg-[#F4F4F4] border-none">
-        <div className="flex h-[600px]">
+        {/* Desktop Layout */}
+        <div className="hidden md:flex h-[600px]">
           <div className="w-[30%] h-full">{renderCard(0, 'h-full')}</div>
           <div className="w-[70%] flex flex-col">
             <div className="flex h-[60%]">
@@ -169,7 +170,17 @@ export default function Rides() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Layout */}
+        <div className="flex flex-col md:hidden gap-4">
+          <div>{renderCard(0, 'h-[200px]')}</div>
+          <div>{renderCard(1, 'h-[200px]')}</div>
+          <div>{renderCard(2, 'h-[200px]')}</div>
+          <div>{renderCard(3, 'h-[200px]')}</div>
+          <div>{renderCard(4, 'h-[200px]')}</div>
+        </div>
       </section>
+
 
       <Footer />
     </div>
