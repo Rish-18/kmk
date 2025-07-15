@@ -7,7 +7,7 @@ import WebLogoEng from "../../../assets/Web_Logo_KMK_Eng_notext.png";
 export default function Footer() {
   const context = useContext(LanguageContext);
   if (!context) return null;
-  const { t } = context;
+  const { t, lang } = context;
 
   return (
     <footer className="w-full font-quicksand font-semibold text-base md:text-lg text-white text-center">
@@ -50,7 +50,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 lg:gap-20 text-base md:text-lg lg:text-xl">
             <div className="flex items-center gap-2">
               <Phone size={20} className="text-[#FFD42D]" />
-              {t("footer_phone")}
+              <a href={`tel:97340408556`}>
+                <span dir={lang === "ar" ? "rtl" : "ltr"}>+973 4040 8556</span>
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={20} className="text-[#FFD42D]" />

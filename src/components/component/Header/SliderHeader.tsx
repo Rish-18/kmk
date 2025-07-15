@@ -39,7 +39,9 @@ export default function SliderHeader() {
             <div className="bg-[#009D48] p-1 rounded">
               <Phone size={16} className="text-white" />
             </div>
-            <span>+973 4040 8556</span>
+            <a href={`tel:${lang === "ar" ? "97340408556" : "97340408556"}`}>
+              <span>{lang === "ar" ? "+973 4040 8556" : "+973 4040 8556"}</span>
+            </a>
           </div>
           <Button className="bg-[#FFD42D] text-black hover:bg-yellow-300 shadow-md font-bold text-lg hidden md:inline-flex">
             {t("card_top_up")}
