@@ -17,7 +17,7 @@ export default function SliderHeader() {
   if (!langContext) return null;
   const { lang, toggleLang, t } = langContext;
 
-  const marqueeClass = lang === "ar" ? "scroll-right" : "scroll-left";
+  const marqueeClass = lang === "ar" ? "marquee-track-reverse-nav" : "marquee-track";
   return (
 
 
@@ -51,18 +51,18 @@ export default function SliderHeader() {
       <div className="marquee-container overflow-hidden">
         <div className={`marquee-track ${marqueeClass}`}>
           <span className="marquee-text">
-            {`${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}`}
+            {`${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}`}
           </span>
           <span className="marquee-text">
-            {`${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}`}
+            {`${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}`}
           </span>
         </div>
         <div className={`marquee-track ${marqueeClass}`}>
           <span className="marquee-text">
-            {`${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}`}
+            {`${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}`}
           </span>
           <span className="marquee-text">
-            {`${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0${t("marquee_text")}`}
+            {`${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}`}
           </span>
         </div>
       </div>
