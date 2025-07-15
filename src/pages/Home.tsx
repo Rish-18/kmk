@@ -33,6 +33,7 @@ import thumbnail3 from '../assets/home-v3.png';
 import video1 from '../assets/home-video1.mp4';
 import video2 from '../assets/home-video2.mp4';
 import video3 from '../assets/home-video3.mp4';
+import { Link } from 'react-router-dom';
 
 const allImages = [minislide1, minislide2, minislide3, minislide4, minislide5, minislide6, minislide7, minislide8];
 const imagesTop = allImages.slice(0, 4);
@@ -149,9 +150,12 @@ export default function Home() {
                             ))}
                         </div>
                         <div className="text-left">
-                            <button className="bg-green-700 hover:bg-green-800 text-white font-medium px-6 py-2 rounded shadow">
-                                {t("explore_all")}
-                            </button>
+                            <Link to="/offers">
+                                <button className="bg-green-700 hover:bg-green-800 text-white font-medium px-6 py-2 rounded shadow">
+                                    {t("explore_all")}
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
@@ -218,9 +222,10 @@ export default function Home() {
                                 />
                                 {playingIndex !== index && (
                                     <div className="absolute inset-0 flex items-center justify-center">
-                                        <button onClick={() => togglePlay(index)} className="bg-green-550 p-3 rounded-full shadow-lg hover:scale-110 transition">
+                                        <button onClick={() => togglePlay(index)} className="bg-green-500 p-3 rounded-full shadow-lg hover:scale-110 transition">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" className="w-6 h-6"><path d="M8 5v14l11-7z" /></svg>
                                         </button>
+
                                     </div>
                                 )}
                             </div>
