@@ -9,10 +9,12 @@ import Blog from './pages/Blog'
 import Rides from './pages/Rides'
 import About from './pages/About'
 // import SliderHeader from './components/component/Header/SliderHeader'
+import ScrollToTop from './components/component/ScrollToTop/ScrollToTop';
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blog />} />

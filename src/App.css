@@ -79,18 +79,17 @@
 }
 
 
-.marquee-track,
-.marquee-track-reverse {
+.marquee-track {
   display: flex;
   width: max-content;
   gap: 1rem;
 }
 
-.marquee-track {
+.scroll-left {
   animation: scroll-left 10s linear infinite;
 }
 
-.marquee-track-reverse {
+.scroll-right {
   animation: scroll-right 10s linear infinite;
 }
 
@@ -105,12 +104,13 @@
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(-2%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(50%);
   }
 }
+
 
 
 .perspective {
