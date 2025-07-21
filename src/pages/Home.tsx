@@ -6,8 +6,8 @@ import Footer from '../components/component/Footer/Footer';
 import SliderHeader from '../components/component/Header/SliderHeader';
 import SliderComponent from '../components/component/Slider/SliderComponent';
 
-import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.png";
+// import bannerVideo from "../assets/bannerVideo.mp4";
+import minibanner from "../assets/longminibanner.jpg";
 import bgframe from "../assets/bg-frame.png";
 import girl from '../assets/Girl.png';
 import offerImg from '../assets/offer-img.png';
@@ -21,10 +21,10 @@ import minislide6 from "../assets/minislide6.png";
 import minislide7 from "../assets/minislide7.png";
 import minislide8 from "../assets/minislide8.png";
 
-import manamapark from '../assets/manamapark.png';
-import marinapark from '../assets/marinapark.png';
-import hiddpark from '../assets/hiddpark.png';
-import riffapark from '../assets/riffapark.png';
+import manamapark from '../assets/manamapark.jpg';
+import marinapark from '../assets/marinapark.jpg';
+import hiddpark from '../assets/hiddpark.jpg';
+import riffapark from '../assets/riffapark.jpg';
 import parkbg from '../assets/park-bg.png';
 
 import thumbnail1 from '../assets/home-v1.png';
@@ -84,7 +84,7 @@ export default function Home() {
             <section>
                 <div className="relative h-[300px] md:h-[140dvh] w-full overflow-hidden">
                     <video autoPlay muted loop playsInline poster={minibanner} className="absolute inset-0 w-full h-full object-cover">
-                        <source src={bannerVideo} type="video/mp4" />
+                        <source src="" type="video/mp4" />
                     </video>
 
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center pb-[0px] md:pb-[200px] lg:pb-[300px]">

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Mail, Phone, Clock, Facebook, Instagram, Youtube } from "lucide-react";
 import { LanguageContext } from "../../../context/LanguageContext";
-import footerbg from "../../../assets/footer-bg.png";
+import footerbg from "../../../assets/footer-bg.jpg";
 import WebLogoEng from "../../../assets/Web_Logo_KMK_Eng_notext.png";
 
 export default function Footer() {
@@ -29,10 +29,11 @@ export default function Footer() {
         <img
           src={footerbg}
           alt="Ferris Wheel"
-          className="absolute inset-0 w-full h-full object-cover opacity-90"
+          className="absolute inset-0 w-full h-full object-cover object-cover z-[1]"
         />
+        <div className="absolute inset-0 bg-black/80 z-[2]" />
 
-        <div className="relative z-10 py-20 px-4 container mx-auto flex flex-col items-center gap-6 md:gap-10 lg:gap-12">
+        <div className="relative z-3 py-20 px-4 container mx-auto flex flex-col items-center gap-6 md:gap-10 lg:gap-12">
           {/* Logo + Title */}
           <div className="text-center">
             <img src={WebLogoEng} alt="Logo" className="mx-auto w-28 md:w-40 mb-2" />

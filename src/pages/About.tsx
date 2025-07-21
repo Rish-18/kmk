@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import Footer from "../components/component/Footer/Footer";
-import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.png";
+// import bannerVideo from "../assets/bannerVideo.mp4";
+import minibanner from "../assets/minibanner.jpg";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from "../components/component/Header/SliderHeader";
 import parkbg from "../assets/park-bg.png";
@@ -33,7 +33,7 @@ export default function About() {
             <section>
                 <div className="relative h-[300px] md:h-[550px] w-full overflow-hidden">
                     <video autoPlay muted loop playsInline poster={minibanner} className="absolute inset-0 w-full h-full object-cover">
-                        <source src={bannerVideo} type="video/mp4" />
+                        <source src="" type="video/mp4" />
                     </video>
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                         <h1 className="text-[#FFD42D] text-2xl md:text-4xl font-heading tracking-wide">

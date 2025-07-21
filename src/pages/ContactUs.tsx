@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Footer from '../components/component/Footer/Footer';
-import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.png";
+// import bannerVideo from "../assets/bannerVideo.mp4";
+import minibanner from "../assets/minibanner.jpg";
 import bgframe from "../assets/bg-frame.png";
 import contact from "../assets/Contact.png";
 import location from "../assets/Location.png";
@@ -29,7 +29,7 @@ export default function ContactUs() {
             poster={minibanner}
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src={bannerVideo} type="video/mp4" />
+            <source src="" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 

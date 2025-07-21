@@ -5,9 +5,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../../context/LanguageContext";
 
-import trampImg from "../../../assets/slider1.png";
-import carromImg from "../../../assets/slider2.png";
-import jumpingImg from "../../../assets/slider3.png";
+import trampImg from "../../../assets/slider1.jpg";
+import carromImg from "../../../assets/slider2.jpg";
+import jumpingImg from "../../../assets/slider3.jpg";
 
 const CustomPrev = ({ style, onClick }: CustomArrowProps) => (
   <button
@@ -87,7 +87,10 @@ export default function RidesCarousel() {
                 className="relative h-[350px] lg:h-[500px] w-full max-w-[220px] md:max-w-full mx-auto rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
                 style={{ backgroundImage: `url(${ride.img})` }}
               >
-                <div className="absolute inset-0 flex flex-col justify-end p-6 text-white text-center">
+
+                <div className="absolute inset-0 bg-black/30 z-[2]" />
+
+                <div className="absolute inset-0 flex flex-col justify-end p-6 text-white text-center z-4">
                   <p className="text-2xl font-bold mb-2">{ride.title}</p>
                   <p className="text-sm line-clamp-5">{ride.desc}</p>
                   <button className="mt-4 px-4 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200 transition">

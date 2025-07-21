@@ -1,14 +1,28 @@
 import { useContext, useEffect, useState } from 'react';
 import Footer from '../components/component/Footer/Footer';
-import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.png";
+// import bannerVideo from "../assets/bannerVideo.mp4";
+import minibanner from "../assets/minibanner.jpg";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from '../components/component/Header/SliderHeader';
-import trampoline from "../assets/trampoline.png";
-import carrom from "../assets/carrom.png";
-import karting from "../assets/karting.png";
-import jumping from "../assets/jumping.png";
-import football from "../assets/football.png";
+// import carrom from "../assets/carrom.png";
+// import karting from "../assets/karting.png";
+
+import trampoline from "../assets/trampoline.jpg";
+import arcade from "../assets/Arcade.jpg"
+import crazybus from "../assets/crazybus.jpg";
+import rockintug from "../assets/rockintug.jpg";
+import playarea from "../assets/playarea.jpg";
+import ballpit from "../assets/ballpit.jpg";
+import delux3dkiddleride from "../assets/delux3dkiddleride.jpg";
+import speedbocce from "../assets/speedbocce.jpg";
+import jumping from "../assets/jumpin.jpg";
+import carousel from "../assets/carousel.jpg";
+import hawaiiansurfing from "../assets/hawaiiansurfing.jpg";
+import minitrainride from "../assets/minitrainride.jpg";
+import boatride from "../assets/boatride.jpg";
+import merrygoround from "../assets/merrygoround.jpg";
+import disko from "../assets/disko.jpg";
+
 import { LanguageContext } from '../context/LanguageContext';
 import en from "../locales/en.json";
 
@@ -29,40 +43,40 @@ const cardsData: RideCard[] = [
     key: 'trampoline',
     variants: [
       { img: trampoline, label: 'ride_trampoline1' },
-      { img: carrom, label: 'ride_trampoline2' },
-      { img: trampoline, label: 'ride_trampoline3' },
+      { img: arcade, label: 'ride_trampoline2' },
+      { img: crazybus, label: 'ride_trampoline3' },
     ],
   },
   {
     key: 'carrom',
     variants: [
-      { img: carrom, label: 'ride_carrom1' },
-      { img: trampoline, label: 'ride_carrom2' },
-      { img: carrom, label: 'ride_carrom3' },
+      { img: rockintug, label: 'ride_carrom1' },
+      { img: playarea, label: 'ride_carrom2' },
+      { img: ballpit, label: 'ride_carrom3' },
     ],
   },
   {
     key: 'jumping',
     variants: [
-      { img: jumping, label: 'ride_jumping1' },
-      { img: karting, label: 'ride_jumping2' },
+      { img: delux3dkiddleride, label: 'ride_jumping1' },
+      { img: speedbocce, label: 'ride_jumping2' },
       { img: jumping, label: 'ride_jumping3' },
     ],
   },
   {
     key: 'karting',
     variants: [
-      { img: karting, label: 'ride_karting1' },
-      { img: carrom, label: 'ride_karting2' },
-      { img: karting, label: 'ride_karting3' },
+      { img: carousel, label: 'ride_karting1' },
+      { img: hawaiiansurfing, label: 'ride_karting2' },
+      { img: minitrainride, label: 'ride_karting3' },
     ],
   },
   {
     key: 'football',
     variants: [
-      { img: football, label: 'ride_football1' },
-      { img: jumping, label: 'ride_football2' },
-      { img: football, label: 'ride_football3' },
+      { img: boatride, label: 'ride_football1' },
+      { img: merrygoround, label: 'ride_football2' },
+      { img: disko, label: 'ride_football3' },
     ],
   },
 ];
@@ -137,7 +151,7 @@ export default function Rides() {
             poster={minibanner}
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src={bannerVideo} type="video/mp4" />
+            <source src="./" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
