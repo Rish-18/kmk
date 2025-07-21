@@ -3,15 +3,15 @@ import { LanguageContext } from "../context/LanguageContext";
 import Footer from "../components/component/Footer/Footer";
 import offerImg from "../assets/offer-img.png";
 // import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.jpg";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from "../components/component/Header/SliderHeader";
+import minibanner from "../assets/minibanner.png";
 
 export default function OfferPage() {
   const { t } = useContext(LanguageContext)!;
 
   return (
-    <div>
+    <div> 
       <SliderHeader />
 
       {/* Banner Section */}

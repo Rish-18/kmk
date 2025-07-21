@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import Footer from '../components/component/Footer/Footer';
 // import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.jpg";
+import minibanner from "../assets/minibanner.png";
 import bgframe from "../assets/bg-frame.png";
 import contact from "../assets/Contact.png";
 import location from "../assets/Location.png";

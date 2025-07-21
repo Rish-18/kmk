@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import Footer from "../components/component/Footer/Footer";
 // import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/minibanner.jpg";
+import minibanner from "../assets/minibanner.png";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from "../components/component/Header/SliderHeader";
 import parkbg from "../assets/park-bg.png";

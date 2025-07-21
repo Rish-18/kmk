@@ -7,7 +7,7 @@ import SliderHeader from '../components/component/Header/SliderHeader';
 import SliderComponent from '../components/component/Slider/SliderComponent';
 
 // import bannerVideo from "../assets/bannerVideo.mp4";
-import minibanner from "../assets/longminibanner.jpg";
+import minibanner from "../assets/longminibanner.png";
 import bgframe from "../assets/bg-frame.png";
 import girl from '../assets/Girl.png';
 import offerImg from '../assets/offer-img.png';
