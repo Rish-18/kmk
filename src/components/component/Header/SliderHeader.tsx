@@ -3,10 +3,10 @@ import { Button } from "../../ui/button";
 import { ChevronDown, Phone, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import WebLogoEng from "../../../assets/Web_Logo_KMK_Eng.png";
-import manama from "../../../assets/Manama.jpg";
-import marina from "../../../assets/marinabeach.jpg";
-import hidd from "../../../assets/hidd.jpg";
-import riffa from "../../../assets/rafa.jpg";
+import manama from "../../../assets/Manama.png";
+import marina from "../../../assets/marinabeach.png";
+import hidd from "../../../assets/hidd.png";
+import riffa from "../../../assets/rafa.png";
 import { LanguageContext } from "../../../context/LanguageContext";
 
 export default function SliderHeader() {

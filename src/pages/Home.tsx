@@ -21,10 +21,10 @@ import minislide6 from "../assets/minislide6.png";
 import minislide7 from "../assets/minislide7.png";
 import minislide8 from "../assets/minislide8.png";
 
-import manamapark from '../assets/manamapark.jpg';
-import marinapark from '../assets/marinapark.jpg';
-import hiddpark from '../assets/hiddpark.jpg';
-import riffapark from '../assets/riffapark.jpg';
+import manamapark from '../assets/manamapark.png';
+import marinapark from '../assets/marinapark.png';
+import hiddpark from '../assets/hiddpark.png';
+import riffapark from '../assets/riffapark.png';
 import parkbg from '../assets/park-bg.png';
 
 import thumbnail1 from '../assets/home-v1.png';
