@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import Footer from "../components/component/Footer/Footer";
 import offerImg from "../assets/offer-img.png";
-import bannerVideo from "../assets/bannerVideo.mp4";
+// import bannerVideo from "../assets/bannerVideo.mp4";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from "../components/component/Header/SliderHeader";
 import Minibanner from "../assets/minibanner.png"
@@ -25,7 +25,7 @@ export default function OfferPage() {
             poster={Minibanner}
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src={bannerVideo} type="video/mp4" />
+            <source src="" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
