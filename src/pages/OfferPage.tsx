@@ -5,7 +5,7 @@ import offerImg from "../assets/offer-img.png";
 // import bannerVideo from "../assets/bannerVideo.mp4";
 import bgframe from "../assets/bg-frame.png";
 import SliderHeader from "../components/component/Header/SliderHeader";
-import minibanner from "../assets/minibanner.png";
+import Minibanner from "../assets/minibanner.png"
 
 export default function OfferPage() {
   const { t } = useContext(LanguageContext)!;
@@ -22,7 +22,7 @@ export default function OfferPage() {
             muted
             loop
             playsInline
-            poster={minibanner}
+            poster={Minibanner}
             className="absolute inset-0 w-full h-full object-cover"
           >
             <source src="" type="video/mp4" />
