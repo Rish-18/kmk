@@ -21,7 +21,7 @@ export default function SliderHeader() {
   return (
 
 
-    <header className="w-full font-quicksand font-semibold bg-[#F4F4F4]">
+    <header className="w-full font-quicksand font-semibold bg-[#F4F4F4]" data-aos="fade-in" data-aos-delay="200">
       {/* Top Bar */}
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2 text-[#313131] text-sm lg:text-xl">
         <div className="flex items-center gap-4 md:gap-20 flex-wrap justify-center md:justify-start" data-aos="fade-up">
@@ -50,7 +50,7 @@ export default function SliderHeader() {
       </div>
 
       {/* Marquee */}
-      <div className="marquee-container overflow-hidden">
+      <div className="marquee-container overflow-hidden" data-aos="fade-up">
         <div className={`marquee-track ${marqueeClass}`}>
           <span className="marquee-text">
             {`${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0${t("marquee_text")}`}
@@ -75,7 +75,7 @@ export default function SliderHeader() {
           {/* Desktop Navigation */}
           <ul className="hidden md:flex flex-wrap justify-between items-center text-white text-xl font-semibold">
             <li data-aos="fade-in" data-aos-delay="0" ><Link to="/">{t("home")}</Link></li>
-            <li data-aos="fade-in" data-aos-delay="100"  className="relative group">
+            <li data-aos="fade-in" data-aos-delay="100" className="relative group">
               <div className="flex items-center gap-1 cursor-pointer">
                 {t("branches")} <ChevronDown size={16} />
               </div>
@@ -118,7 +118,8 @@ export default function SliderHeader() {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <ul className="flex flex-col mt-4 gap-4 text-white text-lg font-semibold">
+            <ul className="flex flex-col mt-4 gap-4 text-white text-lg font-semibold" data-aos="fade-left"
+            >
               <li><Link to="/">{t("home")}</Link></li>
 
               {/* Mobile Branches Dropdown */}

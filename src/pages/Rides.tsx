@@ -22,21 +22,21 @@ import minitrainride from "../assets/ride10minitrainride.jpg";
 import boatride from "../assets/ride11boatride.jpg";
 import merrygoround from "../assets/ride12merrygoround.jpg";
 import disko from "../assets/ride13disko.jpg";
-import ride14 from "../assets/ride14.jpg"
-import ride15 from "../assets/ride15.jpg"
-import ride16 from "../assets/ride16.jpg"
-import ride17 from "../assets/ride17.jpg"
-import ride18 from "../assets/ride18.jpg"
-import ride19 from "../assets/ride19.jpg"
-import ride20 from "../assets/ride20.jpg"
-import ride21 from "../assets/ride21.jpg"
-import ride22 from "../assets/ride22.jpg"
-import ride23 from "../assets/ride23.jpg"
-import ride24 from "../assets/ride24.jpg"
-import ride25 from "../assets/ride25.jpg"
-import ride26 from "../assets/ride26.jpg"
-import ride27 from "../assets/ride27.jpg"
-import ride28 from "../assets/ride28.jpg"
+import ride14 from "../assets/ride14.png"
+import ride15 from "../assets/ride15.png"
+import ride16 from "../assets/ride16.png"
+import ride17 from "../assets/ride17.png"
+import ride18 from "../assets/ride18.png"
+import ride19 from "../assets/ride19.png"
+import ride20 from "../assets/ride20.png"
+import ride21 from "../assets/ride21.png"
+import ride22 from "../assets/ride22.png"
+import ride23 from "../assets/ride23.png"
+import ride24 from "../assets/ride24.png"
+import ride25 from "../assets/ride25.png"
+import ride26 from "../assets/ride26.png"
+import ride27 from "../assets/ride27.png"
+import ride28 from "../assets/ride28.png"
 
 import { LanguageContext } from '../context/LanguageContext';
 import en from "../locales/en.json";

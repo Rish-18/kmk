@@ -81,7 +81,7 @@ export default function Home() {
             <SliderHeader />
 
             {/* Banner */}
-            <section>
+            <section data-aos="fade-in">
                 <div className="relative h-[300px] md:h-[140dvh] w-full overflow-hidden">
                     <video autoPlay muted loop playsInline poster={minibanner} className="absolute inset-0 w-full h-full object-cover">
                         <source src="" type="video/mp4" />
@@ -103,7 +103,8 @@ export default function Home() {
             </section>
 
             {/* Select Your Park */}
-            <section className="bg-[#F4F4F4] py-12 px-4 text-center relative z-10 min-h-[50vh] bg-cover bg-center" style={{ backgroundImage: `url(${parkbg})` }}>
+            <section className="bg-[#F4F4F4] py-12 px-4 text-center relative z-10 min-h-[50vh] bg-cover bg-center" style={{ backgroundImage: `url(${parkbg})` }} data-aos="fade-up"
+            >
                 <div className="md:absolute md:top-[-50%] xl:top-[-70%] md:left-[4%] xl:left-1/5 mx-auto max-w-6xl">
                     <h2 className="text-[#FFD42D] text-3xl md:text-4xl font-heading mb-8">
                         {t("select_your_park")}
@@ -128,7 +129,7 @@ export default function Home() {
             <ChooseUs />
 
             {/* Offers & Combos */}
-            <section className="bg-[#f4f4f4]">
+            <section className="bg-[#f4f4f4]" data-aos="fade-up">
                 <div className="py-8 px-4 md:px-12 rounded-md max-w-[1200px] flex flex-col md:flex-row items-start gap-4 mx-auto">
                     <div className="w-full md:w-1/3 flex justify-center">
                         <img src={girl} alt="Excited Girl" className="h-[300px] md:h-[400px]" />
@@ -162,7 +163,7 @@ export default function Home() {
             </section>
 
             {/* Kids Kingdom Park - keep LTR */}
-            <section className="py-16 bg-gradient-to-b from-[#FFE273] to-[#FFD42D]">
+            <section className="py-16 bg-gradient-to-b from-[#FFE273] to-[#FFD42D]" data-aos="zoom-in-up">
                 <h2 className="text-3xl md:text-4xl font-heading text-[#3A3A3A] text-center mb-10">{t("kids_kingdom_heading")}</h2>
                 <div className="overflow-hidden w-full" dir="ltr"
                     style={{ direction: 'ltr' }}>
@@ -183,7 +184,7 @@ export default function Home() {
             </section>
 
             {/* Hear From Us */}
-            <section className="py-10 bg-[#F4F4F4]">
+            <section className="py-10 bg-[#F4F4F4]" data-aos="fade-up">
                 <h2 className="text-center text-2xl md:text-4xl font-heading font-semibold mb-8">{t("hear_from_us")}</h2>
                 <div className="max-w-6xl mx-auto px-4 md:px-10">
                     <div className="flex gap-4 overflow-x-auto md:hidden no-scrollbar pb-4 snap-x snap-mandatory">

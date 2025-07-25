@@ -75,14 +75,15 @@ export default function RidesCarousel() {
 
   return (
     <section className="py-16 bg-gradient-to-b from-[#FFE273] to-[#FFD42D] text-center">
-      <h2 className="text-3xl md:text-4xl font-heading text-[#3A3A3A] mb-10">
+      <h2 className="text-3xl md:text-4xl font-heading text-[#3A3A3A] mb-10" data-aos="fade-up"
+      >
         {t("rides_section_title")}
       </h2>
 
       <div className="relative mx-auto max-w-2xl md:max-w-6xl px-4">
         <Slider {...settings}>
           {rides.map((ride, i) => (
-            <div key={i} className="px-2">
+            <div key={i} className="px-2" data-aos="zoom-in" >
               <div
                 className="relative h-[350px] lg:h-[500px] w-full max-w-[220px] md:max-w-full mx-auto rounded-xl overflow-hidden bg-cover bg-center shadow-lg"
                 style={{ backgroundImage: `url(${ride.img})` }}

@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="w-full font-quicksand font-semibold text-base md:text-lg text-white text-center">
       {/* Map section */}
-      <div className="w-full h-[250px] md:h-[350px]">
+      <div className="w-full h-[250px] md:h-[350px]" data-aos="fade-up">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.7136145536847!2d50.6504736!3d26.238493399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49a9006b685235%3A0xa0b15af591f63cc0!2sKids%20kingdom%20entertainment!5e0!3m2!1sen!2sin!4v1752154042277!5m2!1sen!2sin"
           width="100%"
@@ -33,9 +33,10 @@ export default function Footer() {
         />
         <div className="absolute inset-0 bg-black/80 z-[2]" />
 
-        <div className="relative z-3 py-20 px-4 container mx-auto flex flex-col items-center gap-6 md:gap-10 lg:gap-12">
+        <div className="relative z-3 py-20 px-4 container mx-auto flex flex-col items-center gap-6 md:gap-10 lg:gap-12" data-aos="fade-up"
+          data-aos-delay="200">
           {/* Logo + Title */}
-          <div className="text-center">
+          <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
             <img src={WebLogoEng} alt="Logo" className="mx-auto w-28 md:w-40 mb-2" />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#FFD42D] font-heading tracking-wider">
               {t("footer_join_title")}
@@ -48,7 +49,8 @@ export default function Footer() {
           </p>
 
           {/* Contact Info */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 lg:gap-20 text-base md:text-lg lg:text-xl">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 lg:gap-20 text-base md:text-lg lg:text-xl" data-aos="fade-up"
+            data-aos-delay="400">
             <div className="flex items-center gap-2">
               <Phone size={20} className="text-[#FFD42D]" />
               <a href={`tel:97340408556`}>
@@ -66,7 +68,7 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className="mt-6">
+          <div className="mt-6" data-aos="zoom-in" data-aos-delay="500">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#FFD42D] font-[800] mb-4 md:mb-6 tracking-wider">
               {t("footer_follow")}
             </h1>
@@ -86,7 +88,7 @@ export default function Footer() {
       </div>
 
       {/* Footer bottom */}
-      <div className="bg-green-600">
+      <div className="bg-green-600" >
         <div className="py-3 px-4 container mx-auto text-white text-xs sm:text-sm md:text-base lg:text-lg flex flex-col md:flex-row justify-between items-center">
           <p className="text-center">{t("footer_copyright")}</p>
           <div className="flex gap-2 mt-2 md:mt-0 text-center">

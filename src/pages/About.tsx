@@ -36,7 +36,7 @@ export default function About() {
                         <source src="" type="video/mp4" />
                     </video>
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <h1 className="text-[#FFD42D] text-2xl md:text-4xl font-heading tracking-wide">
+                        <h1 className="text-[#FFD42D] text-2xl md:text-4xl font-heading tracking-wide" data-aos="fade-up">
                             {t("about_title")}
                         </h1>
                     </div>
@@ -44,10 +44,10 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="bg-[#F4F4F4] py-12 px-6 text-center relative bg-cover bg-center">
+            <section className="bg-[#F4F4F4] py-12 px-6 text-center relative bg-cover bg-center" data-aos="fade-up">
                 <div className="max-w-4xl mx-auto">
                     <div style={{ backgroundImage: `url(${parkbg})`, backgroundRepeat: 'no-repeat' }} className="bg-cover ">
-                        <h2 className="text-2xl md:text-4xl font-bold text-[#009D48] font-[cursive] mb-2">
+                        <h2 className="text-2xl md:text-4xl font-bold text-[#009D48] font-[cursive] mb-2" data-aos="fade-up">
                             {t("about_welcome")}
                             <br />
                             <span className="text-2xl md:text-4xl text-[#009D48]">{t("headline")}</span>
@@ -60,20 +60,20 @@ export default function About() {
                     {/* Grid */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center" dir="ltr">
                         <div className="flex flex-col gap-4">
-                            <img src={img1} alt="1" className="rounded-lg w-60 h-60 object-cover" />
-                            <img src={img2} alt="2" className="rounded-lg w-60 h-60 object-cover" />
+                            <img src={img1} alt="1" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
+                            <img src={img2} alt="2" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
                         </div>
                         <div className="flex flex-col gap-4 mt-4 md:mt-10">
-                            <img src={img3} alt="3" className="rounded-lg w-60 h-60 object-cover" />
-                            <img src={img4} alt="4" className="rounded-lg w-60 h-60 object-cover" />
+                            <img src={img3} alt="3" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
+                            <img src={img4} alt="4" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
                         </div>
                         <div className="flex flex-col gap-4">
-                            <img src={img5} alt="5" className="rounded-lg w-60 h-60 object-cover" />
-                            <img src={img6} alt="6" className="rounded-lg w-60 h-60 object-cover" />
+                            <img src={img5} alt="5" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
+                            <img src={img6} alt="6" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
                         </div>
                         <div className="flex flex-col gap-4 mt-4 md:mt-10">
-                            <img src={img7} alt="7" className="rounded-lg w-60 h-60 object-cover" />
-                            <img src={img8} alt="8" className="rounded-lg w-60 h-60 object-cover" />
+                            <img src={img7} alt="7" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
+                            <img src={img8} alt="8" className="rounded-lg w-60 h-60 object-cover" data-aos="zoom-in" />
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@ export default function About() {
             </section>
 
             {/* Mission */}
-            <section className="bg-no-repeat lg:bg-repeat bg-cover md:bg-contain py-14 px-4 text-center bg-[#F4F4F4]" style={{ backgroundImage: `url(${aboutbg})` }}>
+            <section className="bg-no-repeat lg:bg-repeat bg-cover md:bg-contain py-14 px-4 text-center bg-[#F4F4F4]" style={{ backgroundImage: `url(${aboutbg})` }} data-aos="zoom-in">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#2e2e2e] mb-4">{t("mission_title")}</h2>
                     <p className="text-base md:text-lg text-[#2e2e2e] leading-relaxed">{t("mission_text")}</p>
@@ -113,6 +113,7 @@ export default function About() {
                         ).map((offer, i) => (
                             <div
                                 key={i}
+                                data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
                                 className={`flex flex-col md:flex-row ${i % 2 === 1 ? "md:flex-row-reverse" : ""
                                     } items-center gap-4`}
                             >
@@ -152,7 +153,8 @@ export default function About() {
                 {/* Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 text-gray-700 relative z-10">
                     {/* Card 1 */}
-                    <div className="space-y-3 border-b md:border-b-0 md:border-r border-gray-300 px-6 py-4">
+                    <div className="space-y-3 border-b md:border-b-0 md:border-r border-gray-300 px-6 py-4" data-aos="zoom-in"
+                    >
                         <p className="text-lg md:text-xl font-semibold text-black">
                             {t("choose_us_card1_title")}
                         </p>
@@ -162,7 +164,8 @@ export default function About() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="space-y-3 border-b md:border-b-0 md:border-r border-gray-300 px-6 py-4">
+                    <div className="space-y-3 border-b md:border-b-0 md:border-r border-gray-300 px-6 py-4" data-aos="zoom-in"
+                    >
                         <p className="text-lg md:text-xl font-semibold text-black">
                             {t("choose_us_card2_title")}
                         </p>
@@ -172,7 +175,8 @@ export default function About() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="space-y-3 px-6 py-4">
+                    <div className="space-y-3 px-6 py-4" data-aos="zoom-in"
+                    >
                         <p className="text-lg md:text-xl font-semibold text-black">
                             {t("choose_us_card3_title")}
                         </p>

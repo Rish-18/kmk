@@ -65,7 +65,8 @@ export default function Blog() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {blogs.map((blog) => (
-              <div key={blog.id} className="bg-white rounded-xl shadow-md overflow-hidden text-center">
+              <div key={blog.id} className="bg-white rounded-xl shadow-md overflow-hidden text-center"     data-aos="fade-up"
+>
                 <img
                   src={blog.imageUrl}
                   alt={lang === "en" ? blog.title_en : blog.title_ar}

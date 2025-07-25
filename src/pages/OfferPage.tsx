@@ -11,12 +11,13 @@ export default function OfferPage() {
   const { t } = useContext(LanguageContext)!;
 
   return (
-    <div> 
+    <div>
       <SliderHeader />
 
       {/* Banner Section */}
       <section>
-        <div className="relative h-[300px] md:h-[550px] w-full overflow-hidden">
+        <div className="relative h-[300px] md:h-[550px] w-full overflow-hidden" data-aos="fade-in"
+        >
           <video
             autoPlay
             muted
@@ -29,7 +30,8 @@ export default function OfferPage() {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center" data-aos="zoom-in"
+          >
             <h1 className="text-[#FFD42D] text-3xl md:text-4xl font-heading tracking-wide">
               {t("offers_combos")}
             </h1>
@@ -50,7 +52,8 @@ export default function OfferPage() {
             {[...Array(3)].map((_, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl shadow-md overflow-hidden text-center"
+                className="bg-white rounded-xl shadow-md overflow-hidden text-center" data-aos="fade-up"
+
               >
                 <img src={offerImg} alt="Amusement Park Offer" className="w-full h-48" />
                 <div className="p-4">

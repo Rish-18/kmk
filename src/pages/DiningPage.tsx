@@ -57,7 +57,7 @@ export default function DiningPage() {
 
       {/* Banner Section */}
       <section>
-        <div className="relative h-[300px] md:h-[550px] w-full overflow-hidden">
+        <div className="relative h-[300px] md:h-[550px] w-full overflow-hidden" data-aos="fade-in">
           <video
             autoPlay
             muted
@@ -87,7 +87,7 @@ export default function DiningPage() {
       {/* Restaurant Card */}
       <section className="py-10 px-4 bg-[#F4F4F4]">
         <div className="container mx-auto p-4 md:p-6">
-          <div className="flex flex-col lg:flex-row gap-6">
+          <div className="flex flex-col lg:flex-row gap-6" data-aos="fade-up">
             <div className="w-full lg:w-1/3">
               <img src={diningImg} alt="Restaurant" className="rounded-lg w-full h-auto" />
             </div>
@@ -149,14 +149,14 @@ export default function DiningPage() {
       </section>
 
       {/* Special Dishes Slider */}
-      <section className="py-10 bg-[#F4F4F4] px-2 md:px-8">
+      <section className="py-10 bg-[#F4F4F4] px-2 md:px-8" data-aos="zoom-in">
         <h1 className="text-center text-xl md:text-4xl font-heading font-semibold text-green-700 mb-8">
           {t("special_dishes")}
         </h1>
 
         <Slider {...sliderSettings}>
           {dishes.map((dish, i) => (
-            <div key={i} className="px-3">
+            <div key={i} className="px-3" data-aos="fade-up" data-aos-delay={i * 100}>
               <div className="flex flex-col items-center gap-2">
                 <img
                   src={dish.img}

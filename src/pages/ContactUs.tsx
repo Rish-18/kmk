@@ -84,7 +84,8 @@ export default function ContactUs() {
           </video>
 
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <h1 className="text-[#FFD42D] text-3xl md:text-4xl font-heading tracking-wide">
+            <h1 data-aos="fade-up"
+              className="text-[#FFD42D] text-3xl md:text-4xl font-heading tracking-wide">
               {t("contact_us_heading")}
             </h1>
           </div>
@@ -105,7 +106,8 @@ export default function ContactUs() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-            <div className="bg-white rounded-lg p-5 shadow-sm border">
+            <div className="bg-white rounded-lg p-5 shadow-sm border" data-aos="fade-up"
+            >
               <div className="text-green-600 text-3xl mb-2 flex justify-center">
                 <img src={contact} alt="Contact" className="h-10" />
               </div>
@@ -113,7 +115,8 @@ export default function ContactUs() {
               <p className="text-gray-800 font-semibold">kidskingdom@gmail.com</p>
             </div>
 
-            <div className="bg-white rounded-lg p-5 shadow-sm border">
+            <div className="bg-white rounded-lg p-5 shadow-sm border" data-aos="fade-up"
+            >
               <div className="text-green-600 text-3xl mb-2 flex justify-center">
                 <img src={time} alt="Time" className="h-10" />
               </div>
@@ -121,7 +124,8 @@ export default function ContactUs() {
               <p className="text-gray-800 font-semibold">{t("weekend_timing")}</p>
             </div>
 
-            <div className="md:col-span-2 bg-white rounded-lg p-5 shadow-sm border">
+            <div className="md:col-span-2 bg-white rounded-lg p-5 shadow-sm border" data-aos="fade-up"
+            >
               <div className="text-green-600 text-3xl mb-2 flex justify-center">
                 <img src={location} alt="Location" className="h-10" />
               </div>
@@ -134,12 +138,14 @@ export default function ContactUs() {
         </div>
 
         {/* Form Section */}
-        <div className="mt-12 max-w-4xl mx-auto">
+        <div className="mt-12 max-w-4xl mx-auto" data-aos="fade-up"
+        >
           <h2 className="text-green-700 font-heading text-2xl md:text-4xl font-semibold text-center mb-6">
             {t("suggestions_enquiry")}
           </h2>
 
-          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md space-y-4" data-aos="fade-up"
+          >
             <div>
               <label className="block font-semibold mb-1 text-sm">{t("form_name")}</label>
               <input
