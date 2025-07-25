@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import Footer from '../components/component/Footer/Footer';
 // import bannerVideo from "../assets/bannerVideo.mp4";
 import minibanner from "../assets/minibanner.png";
@@ -13,6 +13,56 @@ export default function ContactUs() {
   const langContext = useContext(LanguageContext);
   if (!langContext) return null;
   const { t } = langContext;
+
+  const [form, setForm] = useState({
+    name: "",
+    mobile: "",
+    cprNumber: "",
+    email: "",
+    member: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.name || !form.mobile || !form.email || !form.message) {
+      alert("Please fill all required fields.");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      alert("Message submitted successfully!");
+      setForm({
+        name: "",
+        mobile: "",
+        cprNumber: "",
+        email: "",
+        member: "",
+        message: "",
+      });
+    } catch (err) {
+      alert("Failed to submit message. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div>
@@ -89,12 +139,16 @@ export default function ContactUs() {
             {t("suggestions_enquiry")}
           </h2>
 
-          <form className="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md space-y-4">
             <div>
               <label className="block font-semibold mb-1 text-sm">{t("form_name")}</label>
               <input
                 type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
                 placeholder={t("placeholder_name")}
+                required
                 className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
               />
             </div>
@@ -104,7 +158,11 @@ export default function ContactUs() {
                 <label className="block font-semibold mb-1 text-sm">{t("form_mobile")}</label>
                 <input
                   type="tel"
+                  name="mobile"
+                  value={form.mobile}
+                  onChange={handleChange}
                   placeholder={t("placeholder_mobile")}
+                  required
                   className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
                 />
               </div>
@@ -112,6 +170,9 @@ export default function ContactUs() {
                 <label className="block font-semibold mb-1 text-sm">{t("form_cpr")}</label>
                 <input
                   type="text"
+                  name="cprNumber"
+                  value={form.cprNumber}
+                  onChange={handleChange}
                   placeholder={t("placeholder_cpr")}
                   className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
                 />
@@ -123,14 +184,21 @@ export default function ContactUs() {
                 <label className="block font-semibold mb-1 text-sm">{t("form_email")}</label>
                 <input
                   type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder={t("placeholder_email")}
+                  required
                   className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
                 />
               </div>
               <div>
                 <label className="block font-semibold mb-1 text-sm">{t("form_member")}</label>
                 <input
-                  type="number"
+                  type="text"
+                  name="member"
+                  value={form.member}
+                  onChange={handleChange}
                   placeholder={t("placeholder_member")}
                   className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
                 />
@@ -140,7 +208,11 @@ export default function ContactUs() {
             <div>
               <label className="block font-semibold mb-1 text-sm">{t("form_message")}</label>
               <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 placeholder={t("placeholder_message")}
+                required
                 rows={4}
                 className="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-green-300"
               ></textarea>
@@ -149,9 +221,10 @@ export default function ContactUs() {
             <div className="flex justify-center mt-4">
               <button
                 type="submit"
+                disabled={loading}
                 className="bg-[#FFD42D] hover:bg-yellow-300 text-black font-bold py-2 px-6 rounded-md shadow-md"
               >
-                {t("submit")}
+                {loading ? t("submit") + "..." : t("submit")}
               </button>
             </div>
           </form>

@@ -8,20 +8,35 @@ import SliderHeader from '../components/component/Header/SliderHeader';
 // import karting from "../assets/karting.png";
 
 import trampoline from "../assets/trampoline.jpg";
-import arcade from "../assets/Arcade.jpg"
-import crazybus from "../assets/crazybus.jpg";
-import rockintug from "../assets/rockintug.jpg";
-import playarea from "../assets/playarea.jpg";
-import ballpit from "../assets/ballpit.jpg";
-import delux3dkiddleride from "../assets/delux3dkiddleride.jpg";
-import speedbocce from "../assets/speedbocce.jpg";
+import arcade from "../assets/ride1Arcade.jpg"
+import crazybus from "../assets/ride2crazybus.jpg";
+import rockintug from "../assets/ride3rockintug.jpg";
+import playarea from "../assets/ride4playarea.jpg";
+import ballpit from "../assets/ride5ballpit.jpg";
+import delux3dkiddleride from "../assets/ride6delux3dkiddleride.jpg";
+import speedbocce from "../assets/ride7speedbocce.jpg";
 import jumping from "../assets/jumpin.jpg";
-import carousel from "../assets/carousel.jpg";
-import hawaiiansurfing from "../assets/hawaiiansurfing.jpg";
-import minitrainride from "../assets/minitrainride.jpg";
-import boatride from "../assets/boatride.jpg";
-import merrygoround from "../assets/merrygoround.jpg";
-import disko from "../assets/disko.jpg";
+import carousel from "../assets/ride8carousel.jpg";
+import hawaiiansurfing from "../assets/ride9hawaiiansurfing.jpg";
+import minitrainride from "../assets/ride10minitrainride.jpg";
+import boatride from "../assets/ride11boatride.jpg";
+import merrygoround from "../assets/ride12merrygoround.jpg";
+import disko from "../assets/ride13disko.jpg";
+import ride14 from "../assets/ride14.jpg"
+import ride15 from "../assets/ride15.jpg"
+import ride16 from "../assets/ride16.jpg"
+import ride17 from "../assets/ride17.jpg"
+import ride18 from "../assets/ride18.jpg"
+import ride19 from "../assets/ride19.jpg"
+import ride20 from "../assets/ride20.jpg"
+import ride21 from "../assets/ride21.jpg"
+import ride22 from "../assets/ride22.jpg"
+import ride23 from "../assets/ride23.jpg"
+import ride24 from "../assets/ride24.jpg"
+import ride25 from "../assets/ride25.jpg"
+import ride26 from "../assets/ride26.jpg"
+import ride27 from "../assets/ride27.jpg"
+import ride28 from "../assets/ride28.jpg"
 
 import { LanguageContext } from '../context/LanguageContext';
 import en from "../locales/en.json";
@@ -45,6 +60,9 @@ const cardsData: RideCard[] = [
       { img: trampoline, label: 'ride_trampoline1' },
       { img: arcade, label: 'ride_trampoline2' },
       { img: crazybus, label: 'ride_trampoline3' },
+      { img: ride14, label: 'ride_trampoline4' },
+      { img: ride15, label: 'ride_trampoline5' },
+      { img: ride28, label: 'ride_trampoline6' },
     ],
   },
   {
@@ -53,6 +71,9 @@ const cardsData: RideCard[] = [
       { img: rockintug, label: 'ride_carrom1' },
       { img: playarea, label: 'ride_carrom2' },
       { img: ballpit, label: 'ride_carrom3' },
+      { img: ride16, label: 'ride_carrom4' },
+      { img: ride17, label: 'ride_carrom5' },
+      { img: ride27, label: 'ride_carrom6' },
     ],
   },
   {
@@ -61,6 +82,9 @@ const cardsData: RideCard[] = [
       { img: delux3dkiddleride, label: 'ride_jumping1' },
       { img: speedbocce, label: 'ride_jumping2' },
       { img: jumping, label: 'ride_jumping3' },
+      { img: ride18, label: 'ride_jumping4' },
+      { img: ride19, label: 'ride_jumping5' },
+      { img: ride26, label: 'ride_jumping6' },
     ],
   },
   {
@@ -69,6 +93,9 @@ const cardsData: RideCard[] = [
       { img: carousel, label: 'ride_karting1' },
       { img: hawaiiansurfing, label: 'ride_karting2' },
       { img: minitrainride, label: 'ride_karting3' },
+      { img: ride20, label: 'ride_karting4' },
+      { img: ride21, label: 'ride_karting5' },
+      { img: ride25, label: 'ride_karting6' },
     ],
   },
   {
@@ -77,6 +104,9 @@ const cardsData: RideCard[] = [
       { img: boatride, label: 'ride_football1' },
       { img: merrygoround, label: 'ride_football2' },
       { img: disko, label: 'ride_football3' },
+      { img: ride22, label: 'ride_football4' },
+      { img: ride23, label: 'ride_football5' },
+      { img: ride24, label: 'ride_football6' },
     ],
   },
 ];
@@ -99,7 +129,8 @@ export default function Rides() {
       setTimeout(() => {
         setCurrentIndices((prev) => {
           const newIndices = [...prev];
-          newIndices[cardIndex] = (newIndices[cardIndex] + 1) % 3;
+          const totalVariants = cardsData[cardIndex].variants.length;
+          newIndices[cardIndex] = (newIndices[cardIndex] + 1) % totalVariants;
           return newIndices;
         });
 

@@ -92,18 +92,37 @@
   "ride_trampoline1": "Trampoline",
   "ride_trampoline2": "Arcade",
   "ride_trampoline3": "Crazy Bus",
+  "ride_trampoline4": "Foosball table",
+  "ride_trampoline5": "Crocodile Panic",
+  "ride_trampoline6": "Playground",
+
   "ride_carrom1": "Rockin’ Tug",
   "ride_carrom2": "Play Area",
   "ride_carrom3": "Ball Pit",
+  "ride_carrom4": "Octapus Ride",
+  "ride_carrom5": "Roller Coaster",
+  "ride_carrom6": "Horse Ride",
+
   "ride_jumping1": "3D Kiddie Ride",
   "ride_jumping2": "Speed Bocce",
   "ride_jumping3": "Jumping Ride",
+  "ride_jumping4": "Jumping Star",
+  "ride_jumping5": "Karting",
+  "ride_jumping6": "Crazy Driving",
+
   "ride_karting1": "Carousel",
   "ride_karting2": "Hawaiian Surfing",
   "ride_karting3": "Mini Train Ride",
+  "ride_karting4": "Knock Big Adventure",
+  "ride_karting5": "Kiddle Ride",
+  "ride_karting6": "Arcade Shooting",
+
   "ride_football1": "Boat Ride",
   "ride_football2": "Merry-Go-Round",
   "ride_football3": "Disk'O Ride",
+  "ride_football4": "Mini Kart",
+  "ride_football5": "Car Dash",
+  "ride_football6": "Spinning cars",
 
   "blog_heading": "Explore Ride & Game Blogs",
 

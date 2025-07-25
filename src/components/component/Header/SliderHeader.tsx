@@ -24,18 +24,18 @@ export default function SliderHeader() {
     <header className="w-full font-quicksand font-semibold bg-[#F4F4F4]">
       {/* Top Bar */}
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2 text-[#313131] text-sm lg:text-xl">
-        <div className="flex items-center gap-4 md:gap-20 flex-wrap justify-center md:justify-start">
+        <div className="flex items-center gap-4 md:gap-20 flex-wrap justify-center md:justify-start" data-aos="fade-up">
           <img src={WebLogoEng} alt="Logo" className="w-20 h-auto" />
         </div>
 
         <div className="flex items-center gap-4 md:gap-20 mt-2 md:mt-0">
           <button
             onClick={toggleLang}
-            className="bg-white text-black px-4 py-2 rounded"
+            className="bg-white text-black px-4 py-2 rounded" data-aos="fade-up"
           >
             {t("lang_switch")}
           </button>
-          <div className="flex items-center gap-1 hidden md:inline-flex">
+          <div className="flex items-center gap-1 hidden md:inline-flex" data-aos="fade-up">
             <div className="bg-[#009D48] p-1 rounded">
               <Phone size={16} className="text-white" />
             </div>
@@ -43,9 +43,9 @@ export default function SliderHeader() {
               <span>{lang === "ar" ? "+973 4040 8556" : "+973 4040 8556"}</span>
             </a>
           </div>
-          <Button className="bg-[#FFD42D] text-black hover:bg-yellow-300 shadow-md font-bold text-lg hidden md:inline-flex">
+          {/* <Button className="bg-[#FFD42D] text-black hover:bg-yellow-300 shadow-md font-bold text-lg hidden md:inline-flex" data-aos="fade-up">
             {t("card_top_up")}
-          </Button>
+          </Button> */}
         </div>
       </div>
 
@@ -74,8 +74,8 @@ export default function SliderHeader() {
         <div className="container mx-auto px-4 py-4">
           {/* Desktop Navigation */}
           <ul className="hidden md:flex flex-wrap justify-between items-center text-white text-xl font-semibold">
-            <li><Link to="/">{t("home")}</Link></li>
-            <li className="relative group">
+            <li data-aos="fade-in" data-aos-delay="0" ><Link to="/">{t("home")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="100"  className="relative group">
               <div className="flex items-center gap-1 cursor-pointer">
                 {t("branches")} <ChevronDown size={16} />
               </div>
@@ -98,12 +98,12 @@ export default function SliderHeader() {
                 </li>
               </ul>
             </li>
-            <li><Link to="/offers">{t("offers")}</Link></li>
-            <li><Link to="/about">{t("about_us")}</Link></li>
-            <li><Link to="/rides">{t("rides")}</Link></li>
-            <li><Link to="/blogs">{t("blogs")}</Link></li>
-            <li><Link to="/contact">{t("contact_us")}</Link></li>
-            <li><Link to="/dining">{t("dining")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="200" ><Link to="/offers">{t("offers")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="300" ><Link to="/about">{t("about_us")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="400" ><Link to="/rides">{t("rides")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="500" ><Link to="/blogs">{t("blogs")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="600" ><Link to="/contact">{t("contact_us")}</Link></li>
+            <li data-aos="fade-in" data-aos-delay="700" ><Link to="/dining">{t("dining")}</Link></li>
           </ul>
 
           {/* Mobile Toggle */}

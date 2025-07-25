@@ -10,8 +10,17 @@ import Rides from './pages/Rides'
 import About from './pages/About'
 // import SliderHeader from './components/component/Header/SliderHeader'
 import ScrollToTop from './components/component/ScrollToTop/ScrollToTop';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
+
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // animation duration in ms
+    });
+  }, []);
   return (
     <BrowserRouter>
       <ScrollToTop />
